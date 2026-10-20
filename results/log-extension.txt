@@ -1,0 +1,5 @@
+Run 20261020-134940-e769 | set=extension | puzzles=3 | seed=7 | mode=mock
+  puzzle 1/3 [D2 U2 L' B2 F2 D' F L B R D2 B2 F2 D U2 L' U' D F' D'] opt=None -> jev:move_limit/30mv/9.7s  luna:move_limit/30mv/14.1s  clef:move_limit/30mv/7.2s  opus:move_limit/30mv/176.3s
+  puzzle 2/3 [U2 R' L' B' R2 L2 F' D2 U F U L' R2 F' D2 F B D] opt=None -> jev:move_limit/30mv/10.6s  luna:move_limit/30mv/15.5s  clef:move_limit/30mv/6.8s  opus:move_limit/30mv/185.1s
+  puzzle 3/3 [B U' R2 U L F' R' U' L2 D2 B R' D R2 B' R2] opt=None -> jev:move_limit/30mv/10.2s  luna:move_limit/30mv/15.6s  clef:move_limit/30mv/6.7s  opus:move_limit/30mv/170.8s
+Saved results/run-20261020-134940-e769.json

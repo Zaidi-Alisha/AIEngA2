@@ -1,0 +1,12 @@
+Run 20261020-134939-623d | set=primary | puzzles=10 | seed=42 | mode=mock
+  puzzle 1/10 [R' B' D R'] opt=4 -> jev:move_limit/30mv/10.9s  luna:solved/10mv/4.1s  clef:move_limit/30mv/6.9s  opus:solved/4mv/17.4s
+  puzzle 2/10 [B2 R' F R2] opt=4 -> jev:solved/6mv/1.9s  luna:solved/8mv/4.2s  clef:solved/20mv/4.2s  opus:solved/6mv/36.1s
+  puzzle 3/10 [F2 B R2 B'] opt=4 -> jev:solved/12mv/3.4s  luna:move_limit/30mv/14.1s  clef:solved/18mv/4.2s  opus:solved/4mv/19.5s
+  puzzle 4/10 [D' L R2 B] opt=4 -> jev:solved/10mv/3.4s  luna:move_limit/30mv/15.1s  clef:move_limit/30mv/7.2s  opus:solved/4mv/23.6s
+  puzzle 5/10 [F2 U' F2 B' R2] opt=5 -> jev:solved/9mv/2.7s  luna:move_limit/30mv/12.0s  clef:solved/5mv/1.1s  opus:solved/5mv/28.7s
+  puzzle 6/10 [D' U2 R2 L] opt=4 -> jev:solved/4mv/1.3s  luna:solved/4mv/1.8s  clef:move_limit/30mv/7.1s  opus:solved/4mv/18.8s
+  puzzle 7/10 [B' F' R' U'] opt=4 -> jev:solved/4mv/1.3s  luna:solved/28mv/13.5s  clef:solved/4mv/0.9s  opus:solved/4mv/15.9s
+  puzzle 8/10 [L' F' U2 R2 D] opt=5 -> jev:solved/14mv/4.8s  luna:solved/5mv/2.3s  clef:move_limit/30mv/7.4s  opus:solved/5mv/34.3s
+  puzzle 9/10 [R2 L2 D' R'] opt=4 -> jev:solved/4mv/1.8s  luna:solved/8mv/4.2s  clef:solved/11mv/2.7s  opus:solved/4mv/19.0s
+  puzzle 10/10 [U2 R2 U2 R] opt=4 -> jev:solved/4mv/1.1s  luna:solved/25mv/12.9s  clef:move_limit/30mv/6.5s  opus:solved/4mv/28.9s
+Saved results/run-20261020-134939-623d.json

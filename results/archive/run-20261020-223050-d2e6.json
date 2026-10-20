@@ -1,0 +1,988 @@
+{
+ "id": "20261020-223050-d2e6",
+ "test_set": "live3",
+ "seed": 2026,
+ "models": [
+  "jev",
+  "luna",
+  "clef",
+  "opus"
+ ],
+ "mode": "ollama",
+ "status": "done",
+ "current": 0,
+ "created_at": 1792517450.234005,
+ "finished_at": 1792517513.9129193,
+ "next_puzzle_at": null,
+ "settings": {
+  "provider": "ollama",
+  "max_moves": 20,
+  "request_timeout_s": 180.0,
+  "max_retries": 1,
+  "max_invalid_outputs": 5,
+  "trial_time_limit_s": 900.0,
+  "recent_moves_window": 6,
+  "move_metric": "HTM (18 face moves)",
+  "model_ids": {
+   "jev": "gemma3:1b",
+   "luna": "llama3.2:1b",
+   "clef": "qwen2.5:1.5b",
+   "opus": "qwen3:4b"
+  },
+  "replay_from_cache": false,
+  "budget_limits": null
+ },
+ "puzzles": [
+  {
+   "index": 0,
+   "test_set": "live3",
+   "scramble": [
+    "D'",
+    "L2",
+    "R'"
+   ],
+   "state": "DULDUBDUBRRBRRBRRBLFUBFUBRUUDFUDFUDRFFFLLLLLLDBRDBFDLF",
+   "optimal_moves": 3,
+   "optimal_solution": [
+    "L2",
+    "R",
+    "D"
+   ],
+   "status": "done",
+   "trials": {
+    "jev": {
+     "model": "jev",
+     "status": "move_limit",
+     "phase": "",
+     "state": "DULDUBDUBRRBRRBRRBLFUBFUBRUUDFUDFUDRFFFLLLLLLDBRDBFDLF",
+     "moves": [
+      {
+       "n": 1,
+       "move": "U2",
+       "latency_ms": 432.3,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 2,
+       "move": "U2",
+       "latency_ms": 281.7,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 3,
+       "move": "U2",
+       "latency_ms": 8254.5,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 4,
+       "move": "U2",
+       "latency_ms": 285.2,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 5,
+       "move": "U2",
+       "latency_ms": 271.4,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 6,
+       "move": "U2",
+       "latency_ms": 293.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 7,
+       "move": "U2",
+       "latency_ms": 250.3,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 8,
+       "move": "U2",
+       "latency_ms": 250.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 9,
+       "move": "U2",
+       "latency_ms": 253.1,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 10,
+       "move": "U2",
+       "latency_ms": 253.2,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 11,
+       "move": "U2",
+       "latency_ms": 289.4,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 12,
+       "move": "U2",
+       "latency_ms": 265.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 13,
+       "move": "U2",
+       "latency_ms": 242.4,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 14,
+       "move": "U2",
+       "latency_ms": 279.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 15,
+       "move": "U2",
+       "latency_ms": 261.9,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 16,
+       "move": "U2",
+       "latency_ms": 278.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 17,
+       "move": "U2",
+       "latency_ms": 264.1,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 18,
+       "move": "U2",
+       "latency_ms": 257.5,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 19,
+       "move": "U2",
+       "latency_ms": 269.5,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 20,
+       "move": "U2",
+       "latency_ms": 265.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      432.342600019183,
+      281.74000000581145,
+      8254.463899997063,
+      285.1813000161201,
+      271.35870000347495,
+      293.9106000121683,
+      250.31430000672117,
+      250.62559999059886,
+      253.11069999588653,
+      253.20739997550845,
+      289.43469998193905,
+      265.2894000057131,
+      242.35130002489313,
+      279.26829998614267,
+      261.94190001115203,
+      278.6214000079781,
+      264.0586000052281,
+      257.4851000099443,
+      269.48910002829507,
+      265.34430001629516
+     ],
+     "started_at": 1792517453.4383428,
+     "ended_at": 1792517467.2237232,
+     "total_time_s": 13.785,
+     "error": null,
+     "rank": 3,
+     "final_distance": 3,
+     "tokens_in": 14968,
+     "tokens_out": 160,
+     "cost_usd": 0.0,
+     "last_request": null,
+     "api_calls": 20,
+     "cache_hits": 0,
+     "live_latencies_ms": [
+      432.3,
+      281.7,
+      8254.5,
+      285.2,
+      271.4,
+      293.9,
+      250.3,
+      250.6,
+      253.1,
+      253.2,
+      289.4,
+      265.3,
+      242.4,
+      279.3,
+      261.9,
+      278.6,
+      264.1,
+      257.5,
+      269.5,
+      265.3
+     ],
+     "cache_served_ms": [],
+     "move_count": 20,
+     "elapsed_s": 13.785,
+     "avg_latency_ms": 675.0,
+     "correct_stickers": 22,
+     "avg_live_latency_ms": 675.0,
+     "avg_cache_served_ms": null
+    },
+    "luna": {
+     "model": "luna",
+     "status": "move_limit",
+     "phase": "",
+     "state": "DULDUBDUBRRBRRBRRBLFUBFUBRUUDFUDFUDRFFFLLLLLLDBRDBFDLF",
+     "moves": [
+      {
+       "n": 1,
+       "move": "R2",
+       "latency_ms": 276.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 2,
+       "move": "R2",
+       "latency_ms": 230.5,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 3,
+       "move": "R2",
+       "latency_ms": 210.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 4,
+       "move": "R2",
+       "latency_ms": 216.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 5,
+       "move": "R2",
+       "latency_ms": 221.8,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 6,
+       "move": "R2",
+       "latency_ms": 213.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 7,
+       "move": "R2",
+       "latency_ms": 215.1,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 8,
+       "move": "R2",
+       "latency_ms": 198.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 9,
+       "move": "R2",
+       "latency_ms": 209.4,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 10,
+       "move": "R2",
+       "latency_ms": 209.8,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 11,
+       "move": "R2",
+       "latency_ms": 196.1,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 12,
+       "move": "R2",
+       "latency_ms": 208.0,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 13,
+       "move": "R2",
+       "latency_ms": 217.1,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 14,
+       "move": "R2",
+       "latency_ms": 217.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 15,
+       "move": "R2",
+       "latency_ms": 211.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 16,
+       "move": "R2",
+       "latency_ms": 208.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 17,
+       "move": "R2",
+       "latency_ms": 211.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 18,
+       "move": "R2",
+       "latency_ms": 219.5,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 19,
+       "move": "R2",
+       "latency_ms": 202.8,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 20,
+       "move": "R2",
+       "latency_ms": 197.7,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      276.2525999569334,
+      230.4844000027515,
+      210.8561000204645,
+      216.2784999818541,
+      221.76450002007186,
+      213.57890003127977,
+      215.14960000058636,
+      198.9163999678567,
+      209.43619997706264,
+      209.84899997711182,
+      196.1254999623634,
+      207.989800022915,
+      217.11510000750422,
+      217.5584000069648,
+      211.33840002585202,
+      208.2753999857232,
+      211.26060001552105,
+      219.47389998240396,
+      202.83799996832386,
+      197.67189997946844
+     ],
+     "started_at": 1792517470.6101012,
+     "ended_at": 1792517475.2507722,
+     "total_time_s": 4.641,
+     "error": null,
+     "rank": 1,
+     "final_distance": 3,
+     "tokens_in": 14327,
+     "tokens_out": 160,
+     "cost_usd": 0.0,
+     "last_request": null,
+     "api_calls": 20,
+     "cache_hits": 0,
+     "live_latencies_ms": [
+      276.3,
+      230.5,
+      210.9,
+      216.3,
+      221.8,
+      213.6,
+      215.1,
+      198.9,
+      209.4,
+      209.8,
+      196.1,
+      208.0,
+      217.1,
+      217.6,
+      211.3,
+      208.3,
+      211.3,
+      219.5,
+      202.8,
+      197.7
+     ],
+     "cache_served_ms": [],
+     "move_count": 20,
+     "elapsed_s": 4.641,
+     "avg_latency_ms": 214.6,
+     "correct_stickers": 22,
+     "avg_live_latency_ms": 214.6,
+     "avg_cache_served_ms": null
+    },
+    "clef": {
+     "model": "clef",
+     "status": "move_limit",
+     "phase": "",
+     "state": "DULDUBDUBRRBRRBRRBLFUBFUBRUUDFUDFUDRFFFLLLLLLDBRDBFDLF",
+     "moves": [
+      {
+       "n": 1,
+       "move": "R2",
+       "latency_ms": 414.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 2,
+       "move": "R2",
+       "latency_ms": 282.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 3,
+       "move": "R2",
+       "latency_ms": 246.5,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 4,
+       "move": "R2",
+       "latency_ms": 273.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 5,
+       "move": "R2",
+       "latency_ms": 291.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 6,
+       "move": "R2",
+       "latency_ms": 253.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 7,
+       "move": "R2",
+       "latency_ms": 285.5,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 8,
+       "move": "R2",
+       "latency_ms": 230.7,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 9,
+       "move": "R2",
+       "latency_ms": 242.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 10,
+       "move": "R2",
+       "latency_ms": 232.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 11,
+       "move": "R2",
+       "latency_ms": 251.1,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 12,
+       "move": "R2",
+       "latency_ms": 249.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 13,
+       "move": "R2",
+       "latency_ms": 243.2,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 14,
+       "move": "R2",
+       "latency_ms": 232.7,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 15,
+       "move": "R2",
+       "latency_ms": 234.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 16,
+       "move": "R2",
+       "latency_ms": 239.3,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 17,
+       "move": "R2",
+       "latency_ms": 250.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 18,
+       "move": "R2",
+       "latency_ms": 246.6,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 19,
+       "move": "R2",
+       "latency_ms": 246.9,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      },
+      {
+       "n": 20,
+       "move": "R2",
+       "latency_ms": 239.1,
+       "confidence": null,
+       "correct_stickers": 22,
+       "source": "live"
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      414.9166999850422,
+      282.8989999834448,
+      246.5309000108391,
+      273.6383000155911,
+      291.5842999937013,
+      253.94810002762824,
+      285.51479999441653,
+      230.65320000750944,
+      242.86319996463135,
+      232.63959999894723,
+      251.0863000061363,
+      249.55050001153722,
+      243.22609999217093,
+      232.71979996934533,
+      234.92700001224875,
+      239.3461999599822,
+      250.90970000019297,
+      246.63449998479337,
+      246.94310000631958,
+      239.1036999761127
+     ],
+     "started_at": 1792517483.14611,
+     "ended_at": 1792517488.6781433,
+     "total_time_s": 5.532,
+     "error": null,
+     "rank": 2,
+     "final_distance": 3,
+     "tokens_in": 14668,
+     "tokens_out": 155,
+     "cost_usd": 0.0,
+     "last_request": null,
+     "api_calls": 20,
+     "cache_hits": 0,
+     "live_latencies_ms": [
+      414.9,
+      282.9,
+      246.5,
+      273.6,
+      291.6,
+      253.9,
+      285.5,
+      230.7,
+      242.9,
+      232.6,
+      251.1,
+      249.6,
+      243.2,
+      232.7,
+      234.9,
+      239.3,
+      250.9,
+      246.6,
+      246.9,
+      239.1
+     ],
+     "cache_served_ms": [],
+     "move_count": 20,
+     "elapsed_s": 5.532,
+     "avg_latency_ms": 259.5,
+     "correct_stickers": 22,
+     "avg_live_latency_ms": 259.5,
+     "avg_cache_served_ms": null
+    },
+    "opus": {
+     "model": "opus",
+     "status": "move_limit",
+     "phase": "",
+     "state": "BUDBUDFDULFFLRBBRBURBUFBRBDDULUDFUDRRRRLLRLLFLFUDBFDLF",
+     "moves": [
+      {
+       "n": 1,
+       "move": "U",
+       "latency_ms": 829.6,
+       "confidence": null,
+       "correct_stickers": 20,
+       "source": "live"
+      },
+      {
+       "n": 2,
+       "move": "U",
+       "latency_ms": 768.4,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 3,
+       "move": "F",
+       "latency_ms": 779.6,
+       "confidence": null,
+       "correct_stickers": 12,
+       "source": "live"
+      },
+      {
+       "n": 4,
+       "move": "F",
+       "latency_ms": 755.0,
+       "confidence": null,
+       "correct_stickers": 14,
+       "source": "live"
+      },
+      {
+       "n": 5,
+       "move": "F",
+       "latency_ms": 761.2,
+       "confidence": null,
+       "correct_stickers": 13,
+       "source": "live"
+      },
+      {
+       "n": 6,
+       "move": "F",
+       "latency_ms": 787.9,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 7,
+       "move": "F",
+       "latency_ms": 712.7,
+       "confidence": null,
+       "correct_stickers": 12,
+       "source": "live"
+      },
+      {
+       "n": 8,
+       "move": "F",
+       "latency_ms": 708.1,
+       "confidence": null,
+       "correct_stickers": 14,
+       "source": "live"
+      },
+      {
+       "n": 9,
+       "move": "F",
+       "latency_ms": 676.2,
+       "confidence": null,
+       "correct_stickers": 13,
+       "source": "live"
+      },
+      {
+       "n": 10,
+       "move": "F",
+       "latency_ms": 670.9,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 11,
+       "move": "F",
+       "latency_ms": 662.8,
+       "confidence": null,
+       "correct_stickers": 12,
+       "source": "live"
+      },
+      {
+       "n": 12,
+       "move": "F",
+       "latency_ms": 692.5,
+       "confidence": null,
+       "correct_stickers": 14,
+       "source": "live"
+      },
+      {
+       "n": 13,
+       "move": "F",
+       "latency_ms": 661.3,
+       "confidence": null,
+       "correct_stickers": 13,
+       "source": "live"
+      },
+      {
+       "n": 14,
+       "move": "F",
+       "latency_ms": 657.5,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 15,
+       "move": "F",
+       "latency_ms": 644.7,
+       "confidence": null,
+       "correct_stickers": 12,
+       "source": "live"
+      },
+      {
+       "n": 16,
+       "move": "F",
+       "latency_ms": 647.8,
+       "confidence": null,
+       "correct_stickers": 14,
+       "source": "live"
+      },
+      {
+       "n": 17,
+       "move": "F",
+       "latency_ms": 645.0,
+       "confidence": null,
+       "correct_stickers": 13,
+       "source": "live"
+      },
+      {
+       "n": 18,
+       "move": "F",
+       "latency_ms": 636.3,
+       "confidence": null,
+       "correct_stickers": 18,
+       "source": "live"
+      },
+      {
+       "n": 19,
+       "move": "F",
+       "latency_ms": 660.6,
+       "confidence": null,
+       "correct_stickers": 12,
+       "source": "live"
+      },
+      {
+       "n": 20,
+       "move": "F",
+       "latency_ms": 642.2,
+       "confidence": null,
+       "correct_stickers": 14,
+       "source": "live"
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      829.6077999984846,
+      768.3857000083663,
+      779.6196999843232,
+      755.0007000099868,
+      761.1968999844976,
+      787.9449999891222,
+      712.6825000159442,
+      708.145099983085,
+      676.2285000295378,
+      670.9293000167236,
+      662.8298999858089,
+      692.4503999762237,
+      661.3078000373207,
+      657.4946999899112,
+      644.7268999763764,
+      647.8212000220083,
+      645.0184999848716,
+      636.3204000517726,
+      660.6462000054307,
+      642.2248000162654
+     ],
+     "started_at": 1792517499.5506382,
+     "ended_at": 1792517513.9088671,
+     "total_time_s": 14.358,
+     "error": null,
+     "rank": 4,
+     "final_distance": 5,
+     "tokens_in": 14644,
+     "tokens_out": 200,
+     "cost_usd": 0.0,
+     "last_request": null,
+     "api_calls": 20,
+     "cache_hits": 0,
+     "live_latencies_ms": [
+      829.6,
+      768.4,
+      779.6,
+      755.0,
+      761.2,
+      787.9,
+      712.7,
+      708.1,
+      676.2,
+      670.9,
+      662.8,
+      692.5,
+      661.3,
+      657.5,
+      644.7,
+      647.8,
+      645.0,
+      636.3,
+      660.6,
+      642.2
+     ],
+     "cache_served_ms": [],
+     "move_count": 20,
+     "elapsed_s": 14.358,
+     "avg_latency_ms": 700.0,
+     "correct_stickers": 14,
+     "avg_live_latency_ms": 700.0,
+     "avg_cache_served_ms": null
+    }
+   }
+  }
+ ]
+}

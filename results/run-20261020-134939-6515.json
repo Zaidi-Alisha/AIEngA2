@@ -1,0 +1,1426 @@
+{
+ "id": "20261020-134939-6515",
+ "test_set": "warmup",
+ "seed": 1,
+ "models": [
+  "jev",
+  "luna",
+  "clef",
+  "opus"
+ ],
+ "mode": "mock",
+ "status": "done",
+ "current": 2,
+ "created_at": 1792486179.7882388,
+ "finished_at": 1792486238.053831,
+ "settings": {
+  "max_moves": 30,
+  "request_timeout_s": 90.0,
+  "max_retries": 2,
+  "max_invalid_outputs": 5,
+  "trial_time_limit_s": 300.0,
+  "recent_moves_window": 6,
+  "move_metric": "HTM (18 face moves)",
+  "model_ids": {
+   "jev": "typesafe/jev-1.13",
+   "luna": "openai/gpt-6-luna-decisions",
+   "clef": "cloudflare/clef",
+   "opus": "anthropic/claude-opus-5.5"
+  }
+ },
+ "puzzles": [
+  {
+   "index": 0,
+   "test_set": "warmup",
+   "scramble": [
+    "B",
+    "D",
+    "F2"
+   ],
+   "state": "RRRUUUDDLBRDLRDLFFLLUFFFFFFUUULDDLDDULFULRBBRBBBBBBRRD",
+   "optimal_moves": 3,
+   "optimal_solution": [
+    "F2",
+    "D'",
+    "B'"
+   ],
+   "status": "done",
+   "trials": {
+    "jev": {
+     "model": "jev",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "F2",
+       "latency_ms": 346.7,
+       "confidence": 0.456,
+       "correct_stickers": 32
+      },
+      {
+       "n": 2,
+       "move": "U'",
+       "latency_ms": 451.9,
+       "confidence": 0.613,
+       "correct_stickers": 22
+      },
+      {
+       "n": 3,
+       "move": "D'",
+       "latency_ms": 450.6,
+       "confidence": 0.368,
+       "correct_stickers": 32
+      },
+      {
+       "n": 4,
+       "move": "R2",
+       "latency_ms": 406.7,
+       "confidence": 0.617,
+       "correct_stickers": 23
+      },
+      {
+       "n": 5,
+       "move": "L2",
+       "latency_ms": 219.1,
+       "confidence": 0.592,
+       "correct_stickers": 17
+      },
+      {
+       "n": 6,
+       "move": "R2",
+       "latency_ms": 328.6,
+       "confidence": 0.62,
+       "correct_stickers": 26
+      },
+      {
+       "n": 7,
+       "move": "L2",
+       "latency_ms": 499.2,
+       "confidence": 0.585,
+       "correct_stickers": 32
+      },
+      {
+       "n": 8,
+       "move": "U",
+       "latency_ms": 294.3,
+       "confidence": 0.58,
+       "correct_stickers": 42
+      },
+      {
+       "n": 9,
+       "move": "B'",
+       "latency_ms": 436.2,
+       "confidence": 0.421,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      346.72060003504157,
+      451.870399992913,
+      450.58040000731125,
+      406.66109998710454,
+      219.145999988541,
+      328.6309000104666,
+      499.20170003315434,
+      294.2818999872543,
+      436.18789996253327
+     ],
+     "started_at": 1792486179.791755,
+     "ended_at": 1792486183.2299662,
+     "total_time_s": 3.438,
+     "error": null,
+     "rank": 4,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "typesafe/jev-1.13"
+     },
+     "move_count": 9,
+     "elapsed_s": 3.438,
+     "avg_latency_ms": 381.5,
+     "correct_stickers": 54
+    },
+    "luna": {
+     "model": "luna",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "F2",
+       "latency_ms": 550.6,
+       "confidence": 0.656,
+       "correct_stickers": 32
+      },
+      {
+       "n": 2,
+       "move": "D'",
+       "latency_ms": 559.9,
+       "confidence": 0.425,
+       "correct_stickers": 42
+      },
+      {
+       "n": 3,
+       "move": "B'",
+       "latency_ms": 469.1,
+       "confidence": 0.651,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      550.5815000506118,
+      559.8813000251539,
+      469.0895000239834
+     ],
+     "started_at": 1792486179.791755,
+     "ended_at": 1792486181.3730228,
+     "total_time_s": 1.581,
+     "error": null,
+     "rank": 2,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "openai/gpt-6-luna-decisions"
+     },
+     "move_count": 3,
+     "elapsed_s": 1.581,
+     "avg_latency_ms": 526.5,
+     "correct_stickers": 54
+    },
+    "clef": {
+     "model": "clef",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "F2",
+       "latency_ms": 252.2,
+       "confidence": 0.502,
+       "correct_stickers": 32
+      },
+      {
+       "n": 2,
+       "move": "D'",
+       "latency_ms": 356.0,
+       "confidence": 0.624,
+       "correct_stickers": 42
+      },
+      {
+       "n": 3,
+       "move": "B'",
+       "latency_ms": 140.7,
+       "confidence": 0.617,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      252.22349999239668,
+      356.0287000145763,
+      140.65620000474155
+     ],
+     "started_at": 1792486179.791755,
+     "ended_at": 1792486180.545479,
+     "total_time_s": 0.754,
+     "error": null,
+     "rank": 1,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "cloudflare/clef"
+     },
+     "move_count": 3,
+     "elapsed_s": 0.754,
+     "avg_latency_ms": 249.6,
+     "correct_stickers": 54
+    },
+    "opus": {
+     "model": "opus",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "F2",
+       "latency_ms": 4440.3,
+       "confidence": null,
+       "correct_stickers": 32
+      },
+      {
+       "n": 2,
+       "move": "D'",
+       "latency_ms": 3668.2,
+       "confidence": null,
+       "correct_stickers": 42
+      },
+      {
+       "n": 3,
+       "move": "B'",
+       "latency_ms": 8503.0,
+       "confidence": null,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      4440.308399964124,
+      3668.2201999938115,
+      8502.977899974212
+     ],
+     "started_at": 1792486179.791755,
+     "ended_at": 1792486196.4048288,
+     "total_time_s": 16.613,
+     "error": null,
+     "rank": 3,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/v1/chat/completions",
+      "model": "anthropic/claude-opus-5.5"
+     },
+     "move_count": 3,
+     "elapsed_s": 16.613,
+     "avg_latency_ms": 5537.2,
+     "correct_stickers": 54
+    }
+   }
+  },
+  {
+   "index": 1,
+   "test_set": "warmup",
+   "scramble": [
+    "F",
+    "B'",
+    "L'",
+    "U'"
+   ],
+   "state": "LULLULFFFRFFURUURUDDDDFFRFFBRRBDDBRRBBLLLLDDDURUBBUBBL",
+   "optimal_moves": 4,
+   "optimal_solution": [
+    "U",
+    "L",
+    "B",
+    "F'"
+   ],
+   "status": "done",
+   "trials": {
+    "jev": {
+     "model": "jev",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "L",
+       "latency_ms": 215.3,
+       "confidence": 0.623,
+       "correct_stickers": 27
+      },
+      {
+       "n": 2,
+       "move": "F'",
+       "latency_ms": 358.5,
+       "confidence": 0.654,
+       "correct_stickers": 27
+      },
+      {
+       "n": 3,
+       "move": "F",
+       "latency_ms": 295.1,
+       "confidence": 0.407,
+       "correct_stickers": 27
+      },
+      {
+       "n": 4,
+       "move": "B",
+       "latency_ms": 402.8,
+       "confidence": 0.539,
+       "correct_stickers": 36
+      },
+      {
+       "n": 5,
+       "move": "R2",
+       "latency_ms": 279.4,
+       "confidence": 0.514,
+       "correct_stickers": 28
+      },
+      {
+       "n": 6,
+       "move": "R2",
+       "latency_ms": 402.1,
+       "confidence": 0.557,
+       "correct_stickers": 36
+      },
+      {
+       "n": 7,
+       "move": "B'",
+       "latency_ms": 146.5,
+       "confidence": 0.576,
+       "correct_stickers": 27
+      },
+      {
+       "n": 8,
+       "move": "L'",
+       "latency_ms": 278.3,
+       "confidence": 0.517,
+       "correct_stickers": 19
+      },
+      {
+       "n": 9,
+       "move": "U",
+       "latency_ms": 326.3,
+       "confidence": 0.525,
+       "correct_stickers": 22
+      },
+      {
+       "n": 10,
+       "move": "B",
+       "latency_ms": 432.3,
+       "confidence": 0.557,
+       "correct_stickers": 30
+      },
+      {
+       "n": 11,
+       "move": "F'",
+       "latency_ms": 278.1,
+       "confidence": 0.619,
+       "correct_stickers": 38
+      },
+      {
+       "n": 12,
+       "move": "F",
+       "latency_ms": 329.4,
+       "confidence": 0.385,
+       "correct_stickers": 30
+      },
+      {
+       "n": 13,
+       "move": "B'",
+       "latency_ms": 284.0,
+       "confidence": 0.58,
+       "correct_stickers": 22
+      },
+      {
+       "n": 14,
+       "move": "L",
+       "latency_ms": 306.6,
+       "confidence": 0.635,
+       "correct_stickers": 30
+      },
+      {
+       "n": 15,
+       "move": "L2",
+       "latency_ms": 481.2,
+       "confidence": 0.603,
+       "correct_stickers": 22
+      },
+      {
+       "n": 16,
+       "move": "L2",
+       "latency_ms": 454.3,
+       "confidence": 0.597,
+       "correct_stickers": 30
+      },
+      {
+       "n": 17,
+       "move": "B",
+       "latency_ms": 248.0,
+       "confidence": 0.358,
+       "correct_stickers": 42
+      },
+      {
+       "n": 18,
+       "move": "F'",
+       "latency_ms": 124.3,
+       "confidence": 0.504,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      215.3487000032328,
+      358.4567000507377,
+      295.0649000122212,
+      402.80550002353266,
+      279.3551000067964,
+      402.0940000191331,
+      146.48470003157854,
+      278.2943999627605,
+      326.2861999683082,
+      432.2969999630004,
+      278.1064999871887,
+      329.4121000217274,
+      283.9520000270568,
+      306.6180999740027,
+      481.20410001138225,
+      454.34659998863935,
+      248.01679997472093,
+      124.29770000744611
+     ],
+     "started_at": 1792486196.4078336,
+     "ended_at": 1792486202.1029649,
+     "total_time_s": 5.695,
+     "error": null,
+     "rank": 3,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "typesafe/jev-1.13"
+     },
+     "move_count": 18,
+     "elapsed_s": 5.695,
+     "avg_latency_ms": 313.5,
+     "correct_stickers": 54
+    },
+    "luna": {
+     "model": "luna",
+     "status": "move_limit",
+     "phase": "",
+     "state": "FULFUBUUDLRFLRBURUBBFBFFDLBRULDDDLDFRRRRLLBLBUFDDBURFD",
+     "moves": [
+      {
+       "n": 1,
+       "move": "R",
+       "latency_ms": 402.7,
+       "confidence": 0.492,
+       "correct_stickers": 14
+      },
+      {
+       "n": 2,
+       "move": "D",
+       "latency_ms": 513.2,
+       "confidence": 0.563,
+       "correct_stickers": 16
+      },
+      {
+       "n": 3,
+       "move": "L",
+       "latency_ms": 389.9,
+       "confidence": 0.512,
+       "correct_stickers": 23
+      },
+      {
+       "n": 4,
+       "move": "R'",
+       "latency_ms": 573.1,
+       "confidence": 0.406,
+       "correct_stickers": 30
+      },
+      {
+       "n": 5,
+       "move": "F",
+       "latency_ms": 642.1,
+       "confidence": 0.449,
+       "correct_stickers": 26
+      },
+      {
+       "n": 6,
+       "move": "U",
+       "latency_ms": 652.0,
+       "confidence": 0.45,
+       "correct_stickers": 25
+      },
+      {
+       "n": 7,
+       "move": "U",
+       "latency_ms": 548.7,
+       "confidence": 0.419,
+       "correct_stickers": 21
+      },
+      {
+       "n": 8,
+       "move": "F2",
+       "latency_ms": 468.1,
+       "confidence": 0.545,
+       "correct_stickers": 24
+      },
+      {
+       "n": 9,
+       "move": "D'",
+       "latency_ms": 328.2,
+       "confidence": 0.64,
+       "correct_stickers": 16
+      },
+      {
+       "n": 10,
+       "move": "R2",
+       "latency_ms": 410.3,
+       "confidence": 0.577,
+       "correct_stickers": 12
+      },
+      {
+       "n": 11,
+       "move": "U'",
+       "latency_ms": 564.2,
+       "confidence": 0.629,
+       "correct_stickers": 17
+      },
+      {
+       "n": 12,
+       "move": "U2",
+       "latency_ms": 408.1,
+       "confidence": 0.571,
+       "correct_stickers": 13
+      },
+      {
+       "n": 13,
+       "move": "R",
+       "latency_ms": 655.2,
+       "confidence": 0.425,
+       "correct_stickers": 15
+      },
+      {
+       "n": 14,
+       "move": "L2",
+       "latency_ms": 347.8,
+       "confidence": 0.504,
+       "correct_stickers": 19
+      },
+      {
+       "n": 15,
+       "move": "U",
+       "latency_ms": 749.9,
+       "confidence": 0.647,
+       "correct_stickers": 23
+      },
+      {
+       "n": 16,
+       "move": "U2",
+       "latency_ms": 706.8,
+       "confidence": 0.427,
+       "correct_stickers": 18
+      },
+      {
+       "n": 17,
+       "move": "R",
+       "latency_ms": 380.8,
+       "confidence": 0.595,
+       "correct_stickers": 21
+      },
+      {
+       "n": 18,
+       "move": "U2",
+       "latency_ms": 612.7,
+       "confidence": 0.682,
+       "correct_stickers": 25
+      },
+      {
+       "n": 19,
+       "move": "D2",
+       "latency_ms": 502.1,
+       "confidence": 0.431,
+       "correct_stickers": 26
+      },
+      {
+       "n": 20,
+       "move": "R2",
+       "latency_ms": 707.7,
+       "confidence": 0.459,
+       "correct_stickers": 25
+      },
+      {
+       "n": 21,
+       "move": "D'",
+       "latency_ms": 425.5,
+       "confidence": 0.423,
+       "correct_stickers": 24
+      },
+      {
+       "n": 22,
+       "move": "F",
+       "latency_ms": 411.3,
+       "confidence": 0.59,
+       "correct_stickers": 25
+      },
+      {
+       "n": 23,
+       "move": "D",
+       "latency_ms": 749.8,
+       "confidence": 0.601,
+       "correct_stickers": 25
+      },
+      {
+       "n": 24,
+       "move": "L'",
+       "latency_ms": 756.2,
+       "confidence": 0.607,
+       "correct_stickers": 22
+      },
+      {
+       "n": 25,
+       "move": "D'",
+       "latency_ms": 488.5,
+       "confidence": 0.482,
+       "correct_stickers": 25
+      },
+      {
+       "n": 26,
+       "move": "L",
+       "latency_ms": 364.8,
+       "confidence": 0.431,
+       "correct_stickers": 28
+      },
+      {
+       "n": 27,
+       "move": "U",
+       "latency_ms": 584.6,
+       "confidence": 0.609,
+       "correct_stickers": 28
+      },
+      {
+       "n": 28,
+       "move": "U2",
+       "latency_ms": 514.5,
+       "confidence": 0.545,
+       "correct_stickers": 27
+      },
+      {
+       "n": 29,
+       "move": "F2",
+       "latency_ms": 675.0,
+       "confidence": 0.605,
+       "correct_stickers": 20
+      },
+      {
+       "n": 30,
+       "move": "L'",
+       "latency_ms": 392.8,
+       "confidence": 0.608,
+       "correct_stickers": 18
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      402.6784999878146,
+      513.2332000066526,
+      389.87799995811656,
+      573.060600028839,
+      642.1266000252217,
+      652.011499973014,
+      548.6949000041932,
+      468.1079000001773,
+      328.2374999835156,
+      410.29720002552494,
+      564.1811999958009,
+      408.12360000563785,
+      655.2396999904886,
+      347.7845000452362,
+      749.9061999842525,
+      706.8025000044145,
+      380.8428999618627,
+      612.6521999831311,
+      502.1481000003405,
+      707.7047000057064,
+      425.46699999365956,
+      411.3435999606736,
+      749.8482000082731,
+      756.197200040333,
+      488.4709999896586,
+      364.81479997746646,
+      584.5938000129536,
+      514.477499993518,
+      674.9915999826044,
+      392.7640999900177
+     ],
+     "started_at": 1792486196.4078336,
+     "ended_at": 1792486212.693324,
+     "total_time_s": 16.285,
+     "error": null,
+     "rank": 4,
+     "final_distance": null,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "openai/gpt-6-luna-decisions"
+     },
+     "move_count": 30,
+     "elapsed_s": 16.285,
+     "avg_latency_ms": 530.9,
+     "correct_stickers": 18
+    },
+    "clef": {
+     "model": "clef",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "L",
+       "latency_ms": 262.3,
+       "confidence": 0.488,
+       "correct_stickers": 27
+      },
+      {
+       "n": 2,
+       "move": "L'",
+       "latency_ms": 311.6,
+       "confidence": 0.527,
+       "correct_stickers": 19
+      },
+      {
+       "n": 3,
+       "move": "U",
+       "latency_ms": 341.0,
+       "confidence": 0.473,
+       "correct_stickers": 22
+      },
+      {
+       "n": 4,
+       "move": "F'",
+       "latency_ms": 108.7,
+       "confidence": 0.57,
+       "correct_stickers": 30
+      },
+      {
+       "n": 5,
+       "move": "F",
+       "latency_ms": 249.2,
+       "confidence": 0.404,
+       "correct_stickers": 22
+      },
+      {
+       "n": 6,
+       "move": "L",
+       "latency_ms": 138.5,
+       "confidence": 0.433,
+       "correct_stickers": 30
+      },
+      {
+       "n": 7,
+       "move": "F'",
+       "latency_ms": 140.2,
+       "confidence": 0.484,
+       "correct_stickers": 42
+      },
+      {
+       "n": 8,
+       "move": "B",
+       "latency_ms": 184.5,
+       "confidence": 0.429,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      262.29240000247955,
+      311.6110999835655,
+      340.99960001185536,
+      108.66359999636188,
+      249.21570002334192,
+      138.53519997792318,
+      140.1869000401348,
+      184.5232000341639
+     ],
+     "started_at": 1792486196.4078336,
+     "ended_at": 1792486198.1509044,
+     "total_time_s": 1.743,
+     "error": null,
+     "rank": 2,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "cloudflare/clef"
+     },
+     "move_count": 8,
+     "elapsed_s": 1.743,
+     "avg_latency_ms": 217.0,
+     "correct_stickers": 54
+    },
+    "opus": {
+     "model": "opus",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "U",
+       "latency_ms": 6083.6,
+       "confidence": null,
+       "correct_stickers": 22
+      },
+      {
+       "n": 2,
+       "move": "L",
+       "latency_ms": 6516.2,
+       "confidence": null,
+       "correct_stickers": 30
+      },
+      {
+       "n": 3,
+       "move": "F'",
+       "latency_ms": 6304.2,
+       "confidence": null,
+       "correct_stickers": 42
+      },
+      {
+       "n": 4,
+       "move": "B",
+       "latency_ms": 2683.1,
+       "confidence": null,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      6083.57179997256,
+      6516.2219000048935,
+      6304.234099981841,
+      2683.090100006666
+     ],
+     "started_at": 1792486196.4078336,
+     "ended_at": 1792486217.9967947,
+     "total_time_s": 21.589,
+     "error": null,
+     "rank": 1,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/v1/chat/completions",
+      "model": "anthropic/claude-opus-5.5"
+     },
+     "move_count": 4,
+     "elapsed_s": 21.589,
+     "avg_latency_ms": 5396.8,
+     "correct_stickers": 54
+    }
+   }
+  },
+  {
+   "index": 2,
+   "test_set": "warmup",
+   "scramble": [
+    "R'",
+    "U",
+    "R2",
+    "B"
+   ],
+   "state": "RRDUUFBBFRRBRRDBBDRRDFFDFFLDDUDDUFLLFFUULLULLRUUBBLBBL",
+   "optimal_moves": 4,
+   "optimal_solution": [
+    "B'",
+    "R2",
+    "U'",
+    "R"
+   ],
+   "status": "done",
+   "trials": {
+    "jev": {
+     "model": "jev",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "B'",
+       "latency_ms": 372.1,
+       "confidence": 0.672,
+       "correct_stickers": 30
+      },
+      {
+       "n": 2,
+       "move": "B'",
+       "latency_ms": 360.2,
+       "confidence": 0.69,
+       "correct_stickers": 23
+      },
+      {
+       "n": 3,
+       "move": "B",
+       "latency_ms": 439.0,
+       "confidence": 0.606,
+       "correct_stickers": 30
+      },
+      {
+       "n": 4,
+       "move": "R2",
+       "latency_ms": 419.2,
+       "confidence": 0.419,
+       "correct_stickers": 32
+      },
+      {
+       "n": 5,
+       "move": "U'",
+       "latency_ms": 406.7,
+       "confidence": 0.489,
+       "correct_stickers": 42
+      },
+      {
+       "n": 6,
+       "move": "R",
+       "latency_ms": 342.0,
+       "confidence": 0.47,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      372.078699991107,
+      360.22390000289306,
+      438.9595999964513,
+      419.1616000025533,
+      406.7393000004813,
+      341.9706000131555
+     ],
+     "started_at": 1792486218.0007975,
+     "ended_at": 1792486220.342827,
+     "total_time_s": 2.342,
+     "error": null,
+     "rank": 3,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "typesafe/jev-1.13"
+     },
+     "move_count": 6,
+     "elapsed_s": 2.342,
+     "avg_latency_ms": 389.9,
+     "correct_stickers": 54
+    },
+    "luna": {
+     "model": "luna",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "B'",
+       "latency_ms": 231.3,
+       "confidence": 0.651,
+       "correct_stickers": 30
+      },
+      {
+       "n": 2,
+       "move": "R'",
+       "latency_ms": 453.2,
+       "confidence": 0.551,
+       "correct_stickers": 38
+      },
+      {
+       "n": 3,
+       "move": "R'",
+       "latency_ms": 656.8,
+       "confidence": 0.657,
+       "correct_stickers": 32
+      },
+      {
+       "n": 4,
+       "move": "U'",
+       "latency_ms": 358.4,
+       "confidence": 0.643,
+       "correct_stickers": 42
+      },
+      {
+       "n": 5,
+       "move": "R",
+       "latency_ms": 669.9,
+       "confidence": 0.689,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      231.33519996190444,
+      453.22999998461455,
+      656.8129999795929,
+      358.39690000284463,
+      669.9085999862291
+     ],
+     "started_at": 1792486218.0007975,
+     "ended_at": 1792486220.3731923,
+     "total_time_s": 2.372,
+     "error": null,
+     "rank": 2,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "openai/gpt-6-luna-decisions"
+     },
+     "move_count": 5,
+     "elapsed_s": 2.372,
+     "avg_latency_ms": 473.9,
+     "correct_stickers": 54
+    },
+    "clef": {
+     "model": "clef",
+     "status": "move_limit",
+     "phase": "",
+     "state": "URDUURUUDFBLLRLLRURBRFFBFFUDDBBDDBLRFFFLLRRDLBULUBFBDD",
+     "moves": [
+      {
+       "n": 1,
+       "move": "B'",
+       "latency_ms": 136.7,
+       "confidence": 0.52,
+       "correct_stickers": 30
+      },
+      {
+       "n": 2,
+       "move": "R'",
+       "latency_ms": 312.6,
+       "confidence": 0.523,
+       "correct_stickers": 38
+      },
+      {
+       "n": 3,
+       "move": "F",
+       "latency_ms": 234.1,
+       "confidence": 0.464,
+       "correct_stickers": 30
+      },
+      {
+       "n": 4,
+       "move": "R'",
+       "latency_ms": 282.7,
+       "confidence": 0.667,
+       "correct_stickers": 27
+      },
+      {
+       "n": 5,
+       "move": "R",
+       "latency_ms": 92.6,
+       "confidence": 0.597,
+       "correct_stickers": 30
+      },
+      {
+       "n": 6,
+       "move": "F",
+       "latency_ms": 232.9,
+       "confidence": 0.61,
+       "correct_stickers": 29
+      },
+      {
+       "n": 7,
+       "move": "F2",
+       "latency_ms": 202.4,
+       "confidence": 0.491,
+       "correct_stickers": 38
+      },
+      {
+       "n": 8,
+       "move": "F2",
+       "latency_ms": 297.4,
+       "confidence": 0.625,
+       "correct_stickers": 29
+      },
+      {
+       "n": 9,
+       "move": "B2",
+       "latency_ms": 233.3,
+       "confidence": 0.638,
+       "correct_stickers": 23
+      },
+      {
+       "n": 10,
+       "move": "B2",
+       "latency_ms": 140.7,
+       "confidence": 0.581,
+       "correct_stickers": 29
+      },
+      {
+       "n": 11,
+       "move": "U'",
+       "latency_ms": 169.9,
+       "confidence": 0.417,
+       "correct_stickers": 28
+      },
+      {
+       "n": 12,
+       "move": "F2",
+       "latency_ms": 248.6,
+       "confidence": 0.657,
+       "correct_stickers": 30
+      },
+      {
+       "n": 13,
+       "move": "U",
+       "latency_ms": 187.4,
+       "confidence": 0.495,
+       "correct_stickers": 31
+      },
+      {
+       "n": 14,
+       "move": "F2",
+       "latency_ms": 228.6,
+       "confidence": 0.478,
+       "correct_stickers": 33
+      },
+      {
+       "n": 15,
+       "move": "R'",
+       "latency_ms": 253.1,
+       "confidence": 0.628,
+       "correct_stickers": 31
+      },
+      {
+       "n": 16,
+       "move": "U'",
+       "latency_ms": 128.2,
+       "confidence": 0.605,
+       "correct_stickers": 33
+      },
+      {
+       "n": 17,
+       "move": "U",
+       "latency_ms": 206.1,
+       "confidence": 0.591,
+       "correct_stickers": 31
+      },
+      {
+       "n": 18,
+       "move": "U",
+       "latency_ms": 173.4,
+       "confidence": 0.433,
+       "correct_stickers": 28
+      },
+      {
+       "n": 19,
+       "move": "R",
+       "latency_ms": 201.4,
+       "confidence": 0.631,
+       "correct_stickers": 30
+      },
+      {
+       "n": 20,
+       "move": "U'",
+       "latency_ms": 127.3,
+       "confidence": 0.517,
+       "correct_stickers": 33
+      },
+      {
+       "n": 21,
+       "move": "F2",
+       "latency_ms": 191.1,
+       "confidence": 0.555,
+       "correct_stickers": 30
+      },
+      {
+       "n": 22,
+       "move": "L",
+       "latency_ms": 190.5,
+       "confidence": 0.601,
+       "correct_stickers": 25
+      },
+      {
+       "n": 23,
+       "move": "F2",
+       "latency_ms": 299.8,
+       "confidence": 0.45,
+       "correct_stickers": 31
+      },
+      {
+       "n": 24,
+       "move": "R2",
+       "latency_ms": 206.9,
+       "confidence": 0.589,
+       "correct_stickers": 32
+      },
+      {
+       "n": 25,
+       "move": "B",
+       "latency_ms": 250.2,
+       "confidence": 0.645,
+       "correct_stickers": 32
+      },
+      {
+       "n": 26,
+       "move": "R2",
+       "latency_ms": 237.1,
+       "confidence": 0.615,
+       "correct_stickers": 30
+      },
+      {
+       "n": 27,
+       "move": "F2",
+       "latency_ms": 219.1,
+       "confidence": 0.432,
+       "correct_stickers": 24
+      },
+      {
+       "n": 28,
+       "move": "L",
+       "latency_ms": 110.1,
+       "confidence": 0.427,
+       "correct_stickers": 22
+      },
+      {
+       "n": 29,
+       "move": "F2",
+       "latency_ms": 112.3,
+       "confidence": 0.518,
+       "correct_stickers": 27
+      },
+      {
+       "n": 30,
+       "move": "U",
+       "latency_ms": 142.9,
+       "confidence": 0.574,
+       "correct_stickers": 21
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      136.71650004107505,
+      312.6465000095777,
+      234.121999994386,
+      282.7221999759786,
+      92.60539995739236,
+      232.88140003569424,
+      202.36559998011217,
+      297.36780002713203,
+      233.29190001823008,
+      140.73290000669658,
+      169.9464000412263,
+      248.59730002935976,
+      187.3821999761276,
+      228.61340001691133,
+      253.13279998954386,
+      128.21890000486746,
+      206.08009997522458,
+      173.36630000500008,
+      201.41249999869615,
+      127.32649996178225,
+      191.10170000931248,
+      190.45679998816922,
+      299.76079997140914,
+      206.86139998724684,
+      250.20609999774024,
+      237.05749999498948,
+      219.0602000337094,
+      110.08070001844317,
+      112.3475999920629,
+      142.89040002040565
+     ],
+     "started_at": 1792486218.0007975,
+     "ended_at": 1792486224.278958,
+     "total_time_s": 6.278,
+     "error": null,
+     "rank": 4,
+     "final_distance": null,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/alpha/decisions",
+      "model": "cloudflare/clef"
+     },
+     "move_count": 30,
+     "elapsed_s": 6.278,
+     "avg_latency_ms": 201.6,
+     "correct_stickers": 21
+    },
+    "opus": {
+     "model": "opus",
+     "status": "solved",
+     "phase": "",
+     "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+     "moves": [
+      {
+       "n": 1,
+       "move": "B'",
+       "latency_ms": 3432.3,
+       "confidence": null,
+       "correct_stickers": 30
+      },
+      {
+       "n": 2,
+       "move": "R2",
+       "latency_ms": 6435.9,
+       "confidence": null,
+       "correct_stickers": 32
+      },
+      {
+       "n": 3,
+       "move": "U'",
+       "latency_ms": 6330.6,
+       "confidence": null,
+       "correct_stickers": 42
+      },
+      {
+       "n": 4,
+       "move": "R",
+       "latency_ms": 3834.8,
+       "confidence": null,
+       "correct_stickers": 54
+      }
+     ],
+     "invalid": [],
+     "retries": 0,
+     "call_latencies_ms": [
+      3432.2651000111364,
+      6435.91749999905,
+      6330.640400003176,
+      3834.772200032603
+     ],
+     "started_at": 1792486218.0007975,
+     "ended_at": 1792486238.0488048,
+     "total_time_s": 20.048,
+     "error": null,
+     "rank": 1,
+     "final_distance": 0,
+     "tokens_in": 0,
+     "tokens_out": 0,
+     "cost_usd": 0.0,
+     "last_request": {
+      "endpoint": "/api/v1/chat/completions",
+      "model": "anthropic/claude-opus-5.5"
+     },
+     "move_count": 4,
+     "elapsed_s": 20.048,
+     "avg_latency_ms": 5008.4,
+     "correct_stickers": 54
+    }
+   }
+  }
+ ]
+}

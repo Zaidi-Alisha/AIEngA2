@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rubik's Cube Race</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='9' height='9' rx='2' fill='%23d42a2f'/%3E%3Crect x='10.5' width='9' height='9' rx='2' fill='%2318a04a'/%3E%3Crect x='21' width='9' height='9' rx='2' fill='%23f4cf1f'/%3E%3Crect y='10.5' width='9' height='9' rx='2' fill='%231f5fd6'/%3E%3Crect x='10.5' y='10.5' width='9' height='9' rx='2' fill='%23f5f5f0'/%3E%3Crect x='21' y='10.5' width='9' height='9' rx='2' fill='%23f4791d'/%3E%3Crect y='21' width='9' height='9' rx='2' fill='%2318a04a'/%3E%3Crect x='10.5' y='21' width='9' height='9' rx='2' fill='%23d42a2f'/%3E%3Crect x='21' y='21' width='9' height='9' rx='2' fill='%231f5fd6'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-cube" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div>
+        <h1>RUBIK'S CUBE RACE</h1>
+        <p>Decision models vs. frontier LLM · OpenRouter</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="race" role="tab">Race</button>
+      <button class="tab" data-view="dash" role="tab">Dashboard</button>
+      <button class="tab" data-view="slide" role="tab">Benchmark slide</button>
+    </nav>
+    <div id="budget-pill" class="budget-pill hidden" title="Persistent OpenRouter request counter (all attempts, incl. retries)"></div>
+    <div id="mode-pill" class="mode-pill">…</div>
+    <!-- Student identity: in the sticky top bar, so it is on screen for the whole recording. -->
+    <div id="student-badge" class="student-badge" aria-label="Student">
+      <span class="sb-label">Student</span>
+      <span id="student-name" class="sb-name">—</span>
+      <span id="student-roll" class="sb-roll">—</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ RACE VIEW ============================ -->
+    <section id="view-race" class="view active">
+      <div class="controls panel">
+        <label>Provider
+          <select id="ctl-provider"></select>
+        </label>
+        <label>Test set
+          <select id="ctl-set"></select>
+        </label>
+        <label>Puzzles
+          <input id="ctl-count" type="number" min="1" max="50" value="5" />
+        </label>
+        <label>Seed
+          <input id="ctl-seed" type="number" placeholder="random" />
+        </label>
+        <button id="btn-run" class="btn primary">▶ Run benchmark</button>
+        <button id="btn-cancel" class="btn ghost" disabled>■ Stop</button>
+        <label class="check"><input id="ctl-autoslide" type="checkbox" checked /> Auto slide</label>
+        <span class="grow"></span>
+        <label>Load run
+          <select id="ctl-runs"><option value="">—</option></select>
+        </label>
+      </div>
+
+      <div class="puzzle-bar panel">
+        <div class="pb-left">
+          <div class="pb-title" id="pb-title">No run yet</div>
+          <div class="pb-meta" id="pb-meta">Press <b>Run benchmark</b>. Every model starts from the same scrambled cube.</div>
+        </div>
+        <div class="pb-chips" id="pb-chips"></div>
+      </div>
+
+      <div class="race-grid" id="race-grid"></div>
+
+      <div id="result-banner" class="result-banner hidden"></div>
+    </section>
+
+    <!-- ========================== DASHBOARD VIEW ========================== -->
+    <section id="view-dash" class="view">
+      <div class="controls panel">
+        <label>Scope
+          <select id="dash-scope">
+            <option value="run">Selected run</option>
+            <option value="all">All saved runs</option>
+          </select>
+        </label>
+        <label>Mode
+          <select id="dash-mode">
+            <option value="">mock + live</option>
+            <option value="live">OpenRouter live only</option>
+            <option value="ollama">Ollama only</option>
+            <option value="mock">mock only</option>
+          </select>
+        </label>
+        <label>Test set
+          <select id="dash-set"></select>
+        </label>
+        <button id="btn-refresh" class="btn ghost">↻ Refresh</button>
+        <span class="grow"></span>
+        <span class="muted" id="dash-info"></span>
+      </div>
+      <div id="dash-body"></div>
+    </section>
+
+    <!-- ============================ SLIDE VIEW ============================ -->
+    <section id="view-slide" class="view">
+      <div class="slide-wrap">
+        <div class="slide" id="slide"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="tooltip" class="tooltip hidden" role="tooltip"></div>
+  <div id="conn-warning" class="conn-warning hidden" role="status">Connection to the backend lost — retrying…</div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

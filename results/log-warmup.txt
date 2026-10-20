@@ -1,0 +1,5 @@
+Run 20261020-134939-6515 | set=warmup | puzzles=3 | seed=1 | mode=mock
+  puzzle 1/3 [B D F2] opt=3 -> jev:solved/9mv/3.4s  luna:solved/3mv/1.6s  clef:solved/3mv/0.8s  opus:solved/3mv/16.6s
+  puzzle 2/3 [F B' L' U'] opt=4 -> jev:solved/18mv/5.7s  luna:move_limit/30mv/16.3s  clef:solved/8mv/1.7s  opus:solved/4mv/21.6s
+  puzzle 3/3 [R' U R2 B] opt=4 -> jev:solved/6mv/2.3s  luna:solved/5mv/2.4s  clef:move_limit/30mv/6.3s  opus:solved/4mv/20.0s
+Saved results/run-20261020-134939-6515.json
