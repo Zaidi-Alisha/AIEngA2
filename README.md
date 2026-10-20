@@ -22,15 +22,6 @@ plus free local experiments on **Ollama**:
 
 **▶ Direct link to the recording: [docs/demo.mp4](docs/demo.mp4)** (1 min 41 s, 1600×900, MP4/H.264)
 
-The recording covers the four required points:
-
-| # | PDF requirement | Where in the video |
-|---|---|---|
-| 1 | **In-progress stage**: models are playing | 0:06–1:00: four cubes turning, ticking timers, `deciding…` / `thinking…` |
-| 2 | **Completion stage**: models have completed the game | 1:00–1:14: medals 1st–4th, `SOLVED` / `RAN OUT OF MOVES` / `API ERROR`, results banner |
-| 3 | **Slide with the statistical benchmarks** at the end | 1:16–1:27 dashboard, then 1:27–1:41 the benchmark slide |
-| 4 | **Name and roll number visible during the entire demo** | top-right badge in every frame (*Alisha Zaidi · Roll No. 23k-0025*), and on the slide |
-
 **What the video shows.** It is the **live OpenRouter experiment** from section 6.1: every move,
 every API response and every latency are the real ones. The race was played live once (46 of the
 65 allowed requests). The recorder's first attempt ended its capture too early, and Claude had only 2
